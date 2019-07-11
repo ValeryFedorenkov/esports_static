@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Esports</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script>
+		function validateForm() {
+			var username = document.forms["myForm"]["fname"].value;
+			
+			if (username==""){
+				alert("Please type your name!");
+				return false;
+			}
+			
+			else {
+				alert("Thank you!");
+				return true;
+			}
+			   
+		}
+	</script>
+</head>
+<body>
+
+<div>
+<header>
+	<nav>
+		<ul>
+			<li><a href="index.html">YAHKRIL</a></li>
+			<li><a href="games.html">GAMES</a></li>
+			<li><a class="current" href="esports.html">ESPORTS</a></li>
+			<li><a href="celebrities.html">CELEBRITIES</a></li>
+		</ul>
+	</nav>
+</header>	
+</div>
+
+
+<div>
+
+<form name="myForm"  action="" onsubmit="return validateForm()" method="post">
+	<fieldset>
+		<p>Do you play video games?</p>
+		Your name:<br>
+		<input type="text"  name="fname" >
+		<br>
+		<input type="radio" name="question" id="Yes" value="Yes" >
+		<label for="Yes">Yes. I do play games</label><br>
+		<input type="radio" name="question" id="No" value="No" >
+		<label for="No">No. I do not play games</label><br>
+		<br>
+		<select id="country" name="country">
+			<option value="uk">United Kingdom</option>
+			<option value="roi">Rupublic of Ireland</option>
+			<option value="usa">USA</option>
+			<option value="can">Cananda</option>
+			<option value="other">Other</option>
+		</select>
+		<br><br>
+		<input class="button" type="submit" value="Submit">
+		<input class="button" type="reset" value="Cancel">
+	</fieldset>
+</form>
+</div>
+
+
+</body>
+</html>
