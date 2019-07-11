@@ -1,2 +1,2 @@
-# esports_static
+# esports website
 Static website about esports
